@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Exercise_booking</title>
+		<style type="text/css" media="screen">
+			body {
+				background-color: teal;
+			}
+
+			form {
+				box-sizing: border-box;
+				border: none;
+				max-width: 850px;
+				max-height: 550px;
+				margin: 110px auto;
+				background-color: white;
+				padding: 20px;
+			}
+
+			#addStaff {
+				border: none;
+				max-width: 800px;
+			}
+
+			#form-data {
+				border: solid grey 1px;
+				padding: 10px 400px 10px 30px;
+				max-width: 400px;
+			}
+
+			input {
+				margin: 10px;
+				width: 60%;
+				display: inline-block;
+			}
+
+			label {
+				color: red;
+				display: inline-block;
+				font-size: 20px;
+				padding: 2px 10px 2px;
+			}
+
+			input#submit {
+				box-sizing: border-box;
+				max-width: 200px;
+				border-radius: 10px;
+				opacity: 1;
+				margin: 15px 0px 0px;
+				padding: 20px 40px;
+				background: linear-gradient(#e62945, #8c0a1d);
+				color: white;
+				font-size: .9em;
+			}
+		</style>
+		<script src="javascripts/staff_form.js" charset="utf-8"></script>
+	</head>
+	<body>
+		<form action="/api/staff_members" method="post" accept-charset="utf-8">
+			<fieldset id="addStaff" class="">
+				<div id="form-data">
+					<label>Email: </label>
+					<input type="text" value="" name="email" id="email"/>	
+					<label>Name: </label>
+					<input type="text" value="" name="name" id="name"/>
+				</div>
+				<input type="submit" value="Submit" name="submit" id="submit"/>
+			</fieldset>	
+		</form>
+	</body>
+</html>

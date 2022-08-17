@@ -1,0 +1,88 @@
+body {
+  background-color: teal;
+}
+
+main {
+  position: relative;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 10px;
+  max-width: 650px;
+  height: auto;
+  margin: 100px auto;
+  background-color: white;
+  padding: 20px;
+}
+
+div.float {
+  position: relative;
+  right: -20em;
+  top: -.8em;
+}
+
+div.float button {
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: linear-gradient(rgb(40, 100, 200), rgb(10, 50, 50));
+  padding: 20px 20px;
+  color: aquamarine;
+  font: 25px bold;
+}
+
+fieldset {
+  border: none;
+}
+
+legend.schedule-number {
+  box-sizing: border-box;
+  position: relative;
+  width: 110px;
+  font-size: 15px;
+  z-index: 1;
+  top: -1.5em;
+  left: -1em;
+  border: 2px double;
+  text-align: center;
+  background: beige;
+}
+
+div.form-container {
+  border: 5px double grey; 
+  margin: 20px 10px 30px 0;
+  padding: 10px 10px 10px 30px;
+}
+
+div.form-data {
+  margin: 15px 0;
+  display: flex;
+}
+
+select, input {
+  width: 70%;
+  float: right;
+  font-size: 20px;
+}
+
+label {
+  color: red;
+  display: block;
+  text-align: right;
+  width: 120px;
+
+  font-size: 20px;
+  padding: 2px 10px 2px;
+  float: left;
+}
+
+input#submit {
+  box-sizing: border-box;
+  max-width: 200px;
+  border-radius: 10px;
+  opacity: 1;
+  margin: 15px 0px 0px;
+  padding: 20px 40px;
+  background: linear-gradient(#e62945, #8c0a1d);
+  color: white;
+  font-size: .9em;
+  float: left;
+}

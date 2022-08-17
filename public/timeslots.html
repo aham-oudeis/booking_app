@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/stylesheets/timeslots.css" type="text/css" media="screen" charset="utf-8">
+    <script src="/javascripts/timeslots.js" charset="utf-8"></script>
+    <title>Timeslots</title>
+  </head>
+  <body>
+    <form action="timeslots_submit" method="get" accept-charset="utf-8">
+      <fieldset id="<h1>schedules</h1>" class="">
+       <legend><h1>Schedules</h1></legend>
+       <label>Please select one schedule</label> 
+       <select name="schedule" id="schedule">
+       </select>
+       <label>Email: </label>
+       <input type="email" value="" name="email" id="email"/>
+       <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    <div class="hidden">
+      <form action="/api/students" method="get" accept-charset="utf-8">
+        <fieldset id="<h1>please_provide_new_student_details</h1>" class="">
+          <legend><h1>Please provide new student details</h1></legend>
+          <label>Email: </label>    
+          <input type="text" value="" name="email"/>
+          <label>Name: </label>
+          <input type="text" value="" name="Name" id="Name"/>
+          <label>Booking Sequence: </label>
+          <input type="text" value="" name="booking_sequence" id="booking_sequence"/>
+          <input type="submit" value="Submit" name="" id=""/>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Exercise_booking</title>
+		<link rel="stylesheet" href="/stylesheets/schedule.css" type="text/css" media="screen" charset="utf-8">
+		<script src="javascripts/schedule.js" charset="utf-8"></script>
+	</head>
+	<body>
+		<main>
+			<div class='float'>
+				<button>Add Schedule</button>
+			</div>
+		<form action="/api/staff_members" method="post" accept-charset="utf-8">
+			<fieldset class="add-schedule" id='add-schedule-1'>
+				<div class='form-container'>
+					<legend class='schedule-number'>Schedule <span>1</span></legend>
+					<div class="form-data">
+						<label for='staff_id'>Staff Name: </label>
+						<select name='staff_id'></select>
+					</div>
+					<div class="form-data">
+						<label for='date'>Date: </label>
+						<input type="date" value="mm-dd-yy" name="date" id="date"/>
+					</div>
+					<div class="form-data">
+						<label for='time'>Time: </label>
+						<input type="text" value="hh:mm" name="time" id="time"/>
+					</div>
+				</div>
+				<input type="submit" value="Submit" name="submit" id="submit"/>
+			</fieldset>	
+		</form>
+		</main>
+	</body>
+</html>

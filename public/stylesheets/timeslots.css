@@ -1,0 +1,26 @@
+fieldset {
+  max-width: 650px;
+  margin: 40px auto;
+}
+
+label, select, input {
+  display: inline-block;
+  width: 40%;
+  margin: 5px;
+}
+
+label {
+  align: right;
+  float: left;
+}
+
+input[type='submit'] {
+  display: block;
+  padding: 10px;
+  margin: 10px 0;
+  width: 150px;
+}
+
+div.hidden {
+  display: none;
+}
